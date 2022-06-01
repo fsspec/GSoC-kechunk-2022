@@ -21,7 +21,11 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * added to and configured ESIP qhub jupyter lab enviroment
 * read through kerchunk gitter chat history to get up to speed
 * reproduced Kerchunk example notebooks, and updated notebooks which did not work on qhub
+* made my first pull request with the updated examples!
 
 ## Plan
 
 ## Week 2 (1 June - 8 June)
+* configure a pre-commit hook to strip jupyter notebooks notebooks when pushing to github
+* update goes16 example to use newer coo-map rather than old xarray_open_kwargs
+* create list of further existing example uses of kerchunk
