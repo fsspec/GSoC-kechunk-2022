@@ -38,3 +38,11 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Set up [notebook](https://gist.github.com/peterm790/76e63edbde9a9feccccaee405bcbc4ca) to explore kerchunks handling of fill_value
 
 ## Week 4 (15 - 22 June)
+* Made pull request https://github.com/fsspec/kerchunk/pull/180 to run postprocess before consolidate, which has now been merged into kerchunk repo
+* Made comment https://github.com/fsspec/kerchunk/issues/177#issuecomment-1156835739 in the fill_value vs _FillValue saga, to clarify that xarray only considers fill_value when opening from zarr
+* Explored methods to speed up `MultiZarrtoZarr` by running in parrallel and opened https://github.com/fsspec/kerchunk/issues/182 regarding this
+
+## Plan 
+
+## Week 5 (22 - 29 June)
+* 
