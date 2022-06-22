@@ -32,8 +32,9 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Configured a workflow to create a kerchunk sidecar file for the ERA5 public dataset on aws. 
 * While working with the ERA5 dataset encoutered the issue of dealing with fill_value's and set up a method to solve this using the postprocess argument, although I am still working on this to find a potentially neater solution.  
 
-## Plan
-
 ## Week 3 (8 June - 15 June)
-* Identify the priority of `fill_value` vs `_fill_value` when a kerhunk file is opened by xarray
-* Finalise ERA5 pds kerchunk and try combine mulitple variables (across different files) into one sidecar file, potentially will need two `MultiZarrtoZarr` passes
+* Opened issue https://github.com/fsspec/kerchunk/issues/176 regarding the need to run consolidate again after postprocess when writing output to json 
+* Finalised ERA5-pds workflow and opened virtual dataset using kerchunk sidecar file 
+* Set up [notebook](https://gist.github.com/peterm790/76e63edbde9a9feccccaee405bcbc4ca) to explore kerchunks handling of fill_value
+
+## Week 4 (15 - 22 June)
