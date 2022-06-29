@@ -42,7 +42,7 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Made comment https://github.com/fsspec/kerchunk/issues/177#issuecomment-1156835739 in the fill_value vs _FillValue saga, to clarify that xarray only considers fill_value when opening from zarr
 * Explored methods to speed up `MultiZarrtoZarr` by running in parrallel and opened https://github.com/fsspec/kerchunk/issues/182 regarding this
 
-## Plan 
-
 ## Week 5 (22 - 29 June)
-* 
+* Made initial investigation into automatically converting NCL XML virtual datasets into kerchunk datasets (https://github.com/fsspec/GSoC-kechunk-2022/issues/7)
+* Set up a workflow to produce a kerchunk virtual dataset for the NWM ensemble. (https://github.com/fsspec/GSoC-kechunk-2022/issues/8) (https://discourse.pangeo.io/t/efficient-access-of-ensemble-data-on-aws/2530/7)
+* Confirmed https://github.com/fsspec/kerchunk/pull/183 significantly speeds up the combine step in https://github.com/fsspec/GSoC-kechunk-2022/issues/5#issuecomment-1169868172
