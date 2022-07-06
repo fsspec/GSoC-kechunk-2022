@@ -46,3 +46,15 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Made initial investigation into automatically converting NCL XML virtual datasets into kerchunk datasets (https://github.com/fsspec/GSoC-kechunk-2022/issues/7)
 * Set up a workflow to produce a kerchunk virtual dataset for the NWM ensemble. (https://github.com/fsspec/GSoC-kechunk-2022/issues/8) (https://discourse.pangeo.io/t/efficient-access-of-ensemble-data-on-aws/2530/7)
 * Confirmed https://github.com/fsspec/kerchunk/pull/183 significantly speeds up the combine step in https://github.com/fsspec/GSoC-kechunk-2022/issues/5#issuecomment-1169868172
+
+## Week 6 (29 - 6 July)
+* Created a quick tutorial solving a users issue uging the coomap method in https://github.com/fsspec/kerchunk/issues/184#issuecomment-1171015041
+* Expanded the ERA5 sidecar files to a large selection of variables
+* Discovered it is possible to add variables to an existing kerchunk sidecar file by simply using the python update dictionary method https://nbviewer.org/gist/peterm790/5015b90bb858fcd8ba922c5f764adf4d
+* Set up a tutorial of how to open a kerchunk file mapping the ERA5 dataset and how to construct a simple sidecar file for the dataset https://nbviewer.org/gist/peterm790/23bb7a1484e576fa943e0b7e6c69d2e5
+
+
+## Suggested plan moving forward
+* Potentially roll the above mentioned *'adding variables technique'* into a kerchunk convenience method, which would allow doing so without having to open the files into memory with `ujson.load()` as this become a problem when the json files become larger. 
+* From here it could make sense to continue exploring the concatenating files method from https://github.com/fsspec/kerchunk/issues/134
+* Seperate from the above updating the tutorial in the docs to incorporate more varied uses of `multiZarrtoZarr` such as the arguments available in `coomap` could be worth while. Potentially using the dummy datasets used in testing as examples. 
