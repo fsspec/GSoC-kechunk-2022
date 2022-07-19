@@ -53,6 +53,18 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Discovered it is possible to add variables to an existing kerchunk sidecar file by simply using the python update dictionary method https://nbviewer.org/gist/peterm790/5015b90bb858fcd8ba922c5f764adf4d
 * Set up a tutorial of how to open a kerchunk file mapping the ERA5 dataset and how to construct a simple sidecar file for the dataset https://nbviewer.org/gist/peterm790/23bb7a1484e576fa943e0b7e6c69d2e5
 
+## Week 7 (6 - 13 July)
+* Set up https://github.com/peterm790/ERA5_Kerchunk_tutorial which contains a simple tutorial to generate a sidecar file for ERA5 as well as an extended tutorial which runs through a number of number of different examples of using `MultiZarrtoZarr.combine`
+
+## Week 8 (13 - 20 July)
+* Expanded the prose and descriptions of the tutorials
+* Renamed the original Kerchunk tutorial to quick start and added the ERA5 tutorial to the kerchunk docs in https://github.com/fsspec/kerchunk/pull/193
+* Had an initial go at adding a convenince function to merge variables to existing datasets in https://github.com/fsspec/kerchunk/pull/196
+
+
+
+
+
 
 ## Suggested plan moving forward
 * Potentially roll the above mentioned *'adding variables technique'* into a kerchunk convenience method, which would allow doing so without having to open the files into memory with `ujson.load()` as this become a problem when the json files become larger. 
