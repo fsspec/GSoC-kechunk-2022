@@ -61,12 +61,20 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Renamed the original Kerchunk tutorial to quick start and added the ERA5 tutorial to the kerchunk docs in https://github.com/fsspec/kerchunk/pull/193
 * Had an initial go at adding a convenince function to merge variables to existing datasets in https://github.com/fsspec/kerchunk/pull/196
 
+## Week 9 (20 - 27 July)
+* Merge_vars convenience function modified and now merged into main
+* Configured a docker image containing a pangeo python enviroment https://ghcr.io/peterm790/pangeo and a minimal kerchunk enviroment https://ghcr.io/peterm790/kerchunk utilising https://github.com/iameskild/repo2registry for use with kbatch and cronjob scripts. Which means kerchunk files can now be updated daily. 
+* Set up an example script [create](https://nbviewer.org/gist/peterm790/53e2157770368331de936ca3ba8943d2) and [open](https://nbviewer.org/gist/peterm790/530ff13df08db2f569fc85f76a6e2bb1) LiveOcean forecast data. Discussions on this now tracked at https://github.com/fsspec/GSoC-kechunk-2022/issues/6
+
+## Week 10 (27 - 03 August)
+* Updated HRRR to utilise the new scan_grib module. And updated the case study in the Kerchunk docs to match this https://github.com/fsspec/kerchunk/pull/206
+* investigated modifying combine to accomodate a list of lists input from scan_grib but decided the user should instead be writing each grib message as an individual json which the above case study now reflects. Still to check if changing this slightly to us `fs.cat()` could provide a speed up. https://github.com/fsspec/kerchunk/compare/main...peterm790:kerchunk:grib2_combine
+
+## Week 11 (03 - 10 August)
+* created a script to generate a dashboard from the ERA5 kerchunked data. This however is not running very smoothly and I suspec may be to do with the very small chunk sizing in the origin Netcdf files. 
+* Updated the ERA5 tutorial to instead be native restructured text and no longer rely on pandoc. This is now in a new PR https://github.com/fsspec/kerchunk/pull/208 and the older PR has been closed. 
+* Experimented with a way to open the range of HRRR grib messages in an xarray [datatree](https://github.com/xarray-contrib/datatree). This works to some extent but definitely still needs some work. https://gist.github.com/peterm790/b844fe0410d399f9ad8658377c744149
+* Modified LiveOcean forecast reference update script to utilise etags to monitor file changes. https://github.com/fsspec/GSoC-kechunk-2022/issues/6#issuecomment-1210462818
 
 
-
-
-
-## Suggested plan moving forward
-* Potentially roll the above mentioned *'adding variables technique'* into a kerchunk convenience method, which would allow doing so without having to open the files into memory with `ujson.load()` as this become a problem when the json files become larger. 
-* From here it could make sense to continue exploring the concatenating files method from https://github.com/fsspec/kerchunk/issues/134
-* Seperate from the above updating the tutorial in the docs to incorporate more varied uses of `multiZarrtoZarr` such as the arguments available in `coomap` could be worth while. Potentially using the dummy datasets used in testing as examples. 
+## Suggested plan moving forward 
