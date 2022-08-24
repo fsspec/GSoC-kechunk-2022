@@ -93,4 +93,4 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 
 ## Suggested plan moving forward 
 * from disussion on gitter: set up FAQ/troubleshooting bullet list or try implement custom error messages.
-
+* as well as an .intake_yaml() like convenience function in combine
