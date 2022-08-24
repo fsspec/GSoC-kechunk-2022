@@ -76,5 +76,21 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Experimented with a way to open the range of HRRR grib messages in an xarray [datatree](https://github.com/xarray-contrib/datatree). This works to some extent but definitely still needs some work. https://gist.github.com/peterm790/b844fe0410d399f9ad8658377c744149
 * Modified LiveOcean forecast reference update script to utilise etags to monitor file changes. https://github.com/fsspec/GSoC-kechunk-2022/issues/6#issuecomment-1210462818
 
+## Week 12 (10 - 17 August)
+* Meeting with Eskild from Quansight to understand how kbatch works and troubleshoot. 
+* Spent some time understanding Kubernetes and trying to configure K9s
+* New tutorial https://github.com/fsspec/kerchunk/pull/208 now merged.
+* Updated HRRR case study in docs to point to new gist: https://nbviewer.org/gist/peterm790/92eb1df3d58ba41d3411f8a840be2452
+* Had a meeting with Parker MacCready to trouble shoot implementing LiveOcean kerchunk workflow.
+
+## Week 13 (17 - 24 August)
+* Setup gist to investigate to what extent `combine` can be sped up and continued discussion in https://github.com/fsspec/kerchunk/issues/200#issuecomment-1220547197 
+* This led to `fs.cat` implementation being merged: https://github.com/fsspec/kerchunk/pull/213
+* Had an initial go at configuring `combine` to run in parallel here simply as a convenience function that takes the same arguments as `MultiZarrtoZarr`: https://github.com/fsspec/kerchunk/compare/main...peterm790:kerchunk:dask_convenience_function
+
+
+
 
 ## Suggested plan moving forward 
+* from disussion on gitter: set up FAQ/troubleshooting bullet list or try implement custom error messages.
+
