@@ -88,9 +88,14 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * This led to `fs.cat` implementation being merged: https://github.com/fsspec/kerchunk/pull/213
 * Had an initial go at configuring `combine` to run in parallel here simply as a convenience function that takes the same arguments as `MultiZarrtoZarr`: https://github.com/fsspec/kerchunk/compare/main...peterm790:kerchunk:dask_convenience_function
 
+## Week 14 (24 - 31 August)
+* PR to Pangeo forge to fix Kerchunk reference argument error, merged to main https://github.com/pangeo-forge/pangeo-forge-recipes/pull/399
+* Set up tutorial to open HRRR forecast as a datatree using Kerchunk: https://nbviewer.org/gist/peterm790/2439b1fe5fc781a9cc40281c9855affe
+
+## Week 15 (31 - 07 September)
+* Completed finally summary blog post: link tbd
 
 
 
-## Suggested plan moving forward 
-* from disussion on gitter: set up FAQ/troubleshooting bullet list or try implement custom error messages.
-* as well as an .intake_yaml() like convenience function in combine
+
+
