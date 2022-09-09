@@ -4,7 +4,9 @@ This document will be used to record the planning and progress of the [Kerchunk]
 
 Student: [Peter Marsh](https://github.com/peterm790) Mentors: [Rich Signell](https://github.com/rsignell-usgs), [Martin Durant](https://github.com/martindurant)
 
-## Schedule
+The work I have done over the past few months has ranged from helping to trouble shoot errors raised by the community, exploring ways to optimise and speed up the existing code base, creating convenience functions to execute common workflows and creating a new tutorial covering the full range of functionality offered by Kerchunk. I have also written an article highlighting the functionality of Kerchunk as well as providing two tutorials that I created during my time as a GSOC contributor. This article will soon be published on the [Pangeo Medium Site](https://medium.com/pangeo)
+
+## GSOC Schedule
 
 May 20 - June 12: Community Bonding Period
 
@@ -12,8 +14,7 @@ June 13	- July 25 Phase 1 (July 29 Evaluation Due)
 
 July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluations)
 
-
-## Progress
+## GSOC Progress Monitor
 
 ### Week 1 (25 May - 1 June)
 
@@ -93,9 +94,4 @@ July 25 - September 4 Phase 2 (September 5 - September 12 Submit final Evaluatio
 * Set up tutorial to open HRRR forecast as a datatree using Kerchunk: https://nbviewer.org/gist/peterm790/2439b1fe5fc781a9cc40281c9855affe
 
 ## Week 15 (31 - 07 September)
-* Completed finally summary blog post: link tbd
-
-
-
-
-
+* Completed a final article highlighting the functionality of kerchunk as well as describing the outcomes of the ERA5 and HRRR tutorials I set up. This article will soon be published on the [Pangeo Medium Site](https://medium.com/pangeo)
