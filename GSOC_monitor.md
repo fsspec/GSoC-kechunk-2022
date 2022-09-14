@@ -1,10 +1,12 @@
-# GSOC 2022 Schedule, Planning and Progress Monitor
+# Kerchunk Google Summer of Code 2022 
+
+A blog summarising my work is available at https://medium.com/pangeo/accessing-netcdf-and-grib-file-collections-as-cloud-native-virtual-datasets-using-kerchunk-625a2d0a9191
 
 This document will be used to record the planning and progress of the [Kerchunk](https://github.com/fsspec/kerchunk) GSOC project discussed in https://github.com/fsspec/kerchunk/issues/166 
 
 Student: [Peter Marsh](https://github.com/peterm790) Mentors: [Rich Signell](https://github.com/rsignell-usgs), [Martin Durant](https://github.com/martindurant)
 
-The work I have done over the past few months has ranged from helping to trouble shoot errors raised by the community, exploring ways to optimise and speed up the existing code base, creating convenience functions to execute common workflows and creating a new tutorial covering the full range of functionality offered by Kerchunk. I have also written an article highlighting the functionality of Kerchunk as well as providing two tutorials that I created during my time as a GSOC contributor. This article will soon be published on the [Pangeo Medium Site](https://medium.com/pangeo)
+The work I have done over the past few months has ranged from helping to trouble shoot errors raised by the community, exploring ways to optimise and speed up the existing code base, creating convenience functions to execute common workflows and creating a new tutorial covering the full range of functionality offered by Kerchunk. I have also written an article highlighting the functionality of Kerchunk as well as providing two tutorials that I created during my time as a GSOC contributor. 
 
 ## GSOC Schedule
 
